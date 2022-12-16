@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../image_folder/blackwood_background.jpeg);
+    background-attachment: fixed;
+}
+
+#headerTop_miniBar {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 0 ;
+}
+
+header>nav, header>nav>ul {
+    display: inline-block;
+}
+
+h1 {
+    display: inline-block;
+}
+
+h1 img {
+    width: 6vw;
+    vertical-align: bottom;
+}
+
+.header_fisrtNav {
+    float: left;
+    margin-top: 3px;
+}
+
+.header_secondNav {
+    float: right;
+    margin-top: 3px;
+}
+
+.header_fisrtNav>ul>li, .header_secondNav>ul>li {
+    float: left;
+    padding: 10px;
+}
+
+#headerFollow_ad {
+    text-align: center;
+    background-image: url(../image_folder/back_image_rainbow.webp);
+    height: 40vw;
+}
+
+#headerFollow_ad h2 {
+    display: inline-block;
+}
+
+#headerFollow_ad img {
+    width: 25vw;
+}
+
+#main_firstGoods {
+    text-align: center;
+    margin-top: 200px;
+    background-color: rgb(0, 255, 145);
+
+    height: 40vw;
+}
+
+#main_firstGoods li {
+    display: inline-block;
+    text-align: center;
+}
+
+#main_firstGoods a img{
+    width: 22vw;
+    margin-top: 80px;
+    border: 2px solid black;
+}
+
+main>section {
+    text-align: center;
+    background-color: rgb(255, 170, 0);
+    height: 40vw;
+}
+
+main>section>h2 {
+    display: inline-block;
+}
+
+main>section>div {
+    display: inline-block;
+    float: right;
+    width: 35vw;
+    height: 35vw;
+    background-image: url(../image_folder/test_poster.jpeg)
+}
+
+.footer_logo {
+    background-color: brown;
+    height: 50px;
+}
+
+footer nav {
+    background-color: cornflowerblue;
+    height: 400px;
+    text-align: center;
+}
+
+footer nav>div {
+    display: inline-block;
+    background-color: turquoise;
+    width: 300px;
+    height: 400px;
+    vertical-align: middle;
+}
+
+footer nav+div {
+    background-color: rgb(255, 241, 255);
+    height: 250px;
+}
