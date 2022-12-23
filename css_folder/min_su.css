@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+    z-index: 6;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+/* 
+===================================================== header^
+*/
+
+main {
+    position: relative;
+}
+
+.masterpiece_topBanner {
+    background: url(../image_folder/main_banner.jpeg) -200px -50px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: absolute;
+    left: calc((100vw - 70vw)/2);
+
+    width: 70vw;
+    height: 35vh;
+}
+
+.materpeice_titlePlusItemList {
+    text-align: center;
+    position: absolute;
+    border: 2px solid black;
+    box-sizing: border-box;
+    left: calc((100vw - 70vw)/2);
+    top: 35vh;
+    width: 70vw;
+    height: 160vh;
+}
+
+h2 {
+    line-height: calc(160vh * .05);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.itemsAllWrap {
+    height: 90%;
+}
+
+.item_rowOne {
+    text-align: center;
+    box-sizing: border-box;
+
+    width: 70vw;
+    height: 45vh;
+    margin-bottom: calc((160vh * .05)/3);
+
+    background-color: antiquewhite;
+}
+
+.itemOne {
+    background: url(../image_folder/watch01.png) center/cover;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: 100%;
+
+    margin: 0 2%;
+    border: 2px solid;
+}
+
+.itemOne_detail {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 80%;
+    background-color: coral;
+
+    z-index: 2;
+}
+
+.itemOne_detail a {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.itemOne:hover>div {
+    display: block;
+}
+
+.pageNumUl {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 5%;
+}
+
+.pageNumLi {
+    display: inline-block;
+    margin: 0 3%;
+}
+
+.pageNumLi>a {
+    display: inline-block;
+    background-color: blueviolet;
+
+    font-size: 20px;
+
+    width: 30px;
+    line-height: 30px;
+}
+
+/* 
+===================================================== main_item^
+*/
+
+aside>div {
+    position: fixed;
+    top: 0;
+    width: 2vw;
+    height: 100vh;
+    border: 2px solid black;
+
+    z-index: 2;
+}
+
+aside>div:hover {
+    display: none;
+    z-index: 0;
+}
+
+aside>div:hover+nav {
+    display: inline-block;
+}
+
+aside>nav:hover {
+    z-index: 5;
+}
+
+aside>nav {
+    display: none;
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+
+    width: 30vw;
+    height: 100vh;
+
+    z-index: 1;
+}
+
+aside>nav:hover {
+    display: inline-block;
+}
+
+aside>nav>ul {
+    margin-top: 10vh;
+}
+
+/* aside::before {
+    display: inline-block;
+    position: fixed;
+    content: "";
+    width: 5vw;
+    height: 100vh;
+    background-color: aqua;
+
+    z-index: 2;
+}
+
+aside::before:hover {
+    display: inline-block;
+} */
+
+/* 
+===================================================== main_aside^
+*/
+
+footer {
+    width: 100vw;
+    position: absolute;
+    top: 205vh;
+    z-index: 3;
+}
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}
+
+/* 
+===================================================== footer^
+*/
