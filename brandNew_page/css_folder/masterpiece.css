@@ -65,108 +65,118 @@ header li>a:hover {
 */
 
 main {
-    position: relative;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .masterpiece_topBanner {
-    background: url(../image_folder/main_banner.jpeg) -200px -50px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    position: absolute;
-    left: calc((100vw - 70vw)/2);
+    height: 30vw;
 
-    width: 70vw;
-    height: 35vh;
+    background-color: blue;
 }
 
-.materpeice_titlePlusItemList {
-    text-align: center;
-    position: absolute;
-    border: 2px solid black;
-    box-sizing: border-box;
-    left: calc((100vw - 70vw)/2);
-    top: 35vh;
-    width: 70vw;
-    height: 160vh;
+.Banner_img {
+    height: 60%;
+
+    background: url(../image_folder/main_banner.jpeg) 0 / 100%;
 }
 
 h2 {
-    line-height: calc(160vh * .05);
-    font-size: 50px;
-    font-style: italic;
-    font-weight: lighter;
+    height: 25%;
+
+    background-color: violet;
+}
+
+.sorting_nav {
+    height: 15%;
+
+    background-color: tomato;
+}
+
+/* 
+==========
+*/
+
+.materpeice_titlePlusItemList {
+    height: 150vh;
+    /* margin-top: 10%; */
 }
 
 .itemsAllWrap {
-    height: 90%;
+    box-sizing: border-box;
+    height: 95%;
 }
 
-.item_rowOne {
+.item_rowOne{
+    position: relative;
     text-align: center;
     box-sizing: border-box;
+    height: 50%;
 
-    width: 70vw;
-    height: 45vh;
-    margin-bottom: calc((160vh * .05)/3);
-
-    background-color: antiquewhite;
-}
-
-.itemOne {
-    background: url(../image_folder/watch01.png) center/cover;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    width: 25%;
-    height: 100%;
-
-    margin: 0 2%;
     border: 2px solid;
 }
 
-.itemOne_detail {
-    display: none;
+.itemOne {
+    /* display: inline-block; */
     position: absolute;
-    width: 100%;
-    height: 20%;
-    top: 80%;
-    background-color: coral;
+    width: 40%;
+    height: 80%;
 
-    z-index: 2;
+    top: 10%;
+    
+    background-color: aquamarine;
 }
 
-.itemOne_detail a {
-    background-color: rgba(0, 0, 0, 0.1);
-    display: inline-block;
+/* .itemOne::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:#0008;
+    box-sizing: border-box;
+    border: 1px solid;
+} */
 
+.itemOne.first {
+    left: 5%;
+}
+
+.itemOne.second {
+    right: 5%;
+}
+
+.itemOne_detail {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 30%;
+
+    bottom: 0;
+}
+
+.itemOne_detail>a {
+    display: inline-block;
+    background-color: blue;
     width: 100%;
     height: 100%;
 }
 
-.itemOne:hover>div {
-    display: block;
-}
+/* 
+
+========*/
 
 .pageNumUl {
-    display: inline-block;
     text-align: center;
-    width: 30%;
     height: 5%;
+
+    background-color: darkgoldenrod;
 }
 
-.pageNumLi {
+.pageNumUl>li {
     display: inline-block;
-    margin: 0 3%;
-}
-
-.pageNumLi>a {
-    display: inline-block;
-    background-color: blueviolet;
-
-    font-size: 20px;
-
-    width: 30px;
-    line-height: 30px;
+    line-height: calc(150vh * 0.05);
+    font-size: 25px;
+    margin: 0 10px;
 }
 
 /* 
@@ -176,6 +186,7 @@ h2 {
 aside>div {
     position: fixed;
     top: 0;
+    left: 0;
     width: 2vw;
     height: 100vh;
     border: 2px solid black;
@@ -219,29 +230,14 @@ aside>nav>ul {
     margin-top: 10vh;
 }
 
-/* aside::before {
-    display: inline-block;
-    position: fixed;
-    content: "";
-    width: 5vw;
-    height: 100vh;
-    background-color: aqua;
-
-    z-index: 2;
-}
-
-aside::before:hover {
-    display: inline-block;
-} */
-
 /* 
 ===================================================== main_aside^
 */
 
 footer {
     width: 100vw;
-    position: absolute;
-    top: 205vh;
+    position: relative;
+    bottom: 0;
     z-index: 3;
 }
 
