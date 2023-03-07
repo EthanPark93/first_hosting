@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache">
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
+    <script defer src="./detail_js/detail.js"></script>
     <link rel="stylesheet" href="./detail_css/item1.css">
     <title>Chouette Départ</title>
 </head>
@@ -61,6 +62,50 @@
     </header>
 
     <main>
+        <aside>
+            <h2>Payment</h2>
+            <div class="inner_dis_all inner_dis_first">
+                <div>
+                    <p>name : </p>
+                    <p>Price : </p>
+                    <p>order : </p>
+                    <p>Mtl : </p>
+                </div>
+                <div>
+                    <p>Giant mans's step</p>
+                    <p>130,000,000 Won</p>
+                    <p>Available</p>
+                    <p>Metal</p>
+                </div>
+            </div>
+            <div class="inner_dis_all inner_dis_second">
+                <div>
+                    <p>option</p>
+                    <p>Delivery</p>
+                </div>
+                <div>
+                    <form id="option" action="../../myList_page/pay.html">
+                        <select name="item_option">
+                            <option value="basic">Basic</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="premium">Premium</option>
+                            <option value="royal">Royal</option>
+                        </select>
+
+                        <select name="delivery_method">
+                            <option value="airDelivery">Air delivery</option>
+                            <option value="directPickUp">Direct pick-up</option>
+                            <option value="premium">Premium service</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="inner_dis_all inner_dis_btn">
+                <button type="submit" form="option" class="buyBtn">Buy now</button>
+                <button type="submit" form="option" class="listBtn">My list</button>
+            </div>
+        </aside>
+        
         <section>
             <div class="main_banner main_first_div">
             
@@ -154,14 +199,14 @@
     <footer>
         <div class="container">
             <div class="footer_icon">
-                <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-twitter "></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-google "></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-instagram "></i></a></span>
+                <span><a class="first_icon"><i class="fa-brands fa-facebook-f"></i></a></span>
+                <span><a class="second_icon"><i class="fa-brands fa-twitter "></i></a></span>
+                <span><a class="third_icon"><i class="fa-brands fa-google "></i></a></span>
+                <span><a class="fourth_icon"><i class="fa-brands fa-instagram "></i></a></span>
             </div>
 
             <div class="footer_left_name footer_center footer_font_size">ABOUT COMPANY</div>
-            <div class="footer_left_contents footer_center">Dolorx sit aute sint velit et velit. Aliqua proident do duis ullamco Lorem cupidatat do nisi nisi sit quis deserunt reprehenderit elit. Deserunt elit voluptate anim veniam ullamco ullamco id labore veniam.</div>
+            <div class="footer_left_contents footer_center">Dolute sint velit et velit. Aliqua proident do duis ullamco Lorem cupidatat do nisi nisi sit quis deserunt reprehenderit elit. Deserunt elit voluptate anim veniam ullamco ullamco id labore veniam.</div>
             
             <div class="footer_middle_name footer_center footer_font_size">CONTACT</div>
             <div class="footer_middle_contents">

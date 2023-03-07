@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
     <title>Chouette Départ</title>
-    <link rel="stylesheet" href="../css_folder/changepwd.css">
+    <link rel="stylesheet" href="../css_folder/css_FindPswFolder/changepwd.css"/>
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="../js_folder/js_findPswFloder/changePsw.js"></script>
+
 </head>
 <body> 
     <header>
@@ -19,19 +21,19 @@
                     <li class="mainBtnLi leftMainLi non_iconLi"><a class="non_iconBtn">Masterpiece</a>
                         <ul>
                             <li class="hoverLi num1">
-                                <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu allBtn">All</a>
+                                <a href="../../masterpiece_page/masterpiece.html" class="hover_a hoverMenu allBtn">All</a>
                             </li>
                             <li class="hoverLi num2">
-                                <a href="" class="hover_a hoverMenu metalBtn">Metal</a>
+                                <a href="../../masterpiece_page/masterpiece.html" class="hover_a hoverMenu metalBtn">Metal</a>
                             </li>
                             <li class="hoverLi num3">
-                                <a href="" class="hover_a hoverMenu leatherBtn">Leather</a>
+                                <a href="../../masterpiece_page/masterpiece.html" class="hover_a hoverMenu leatherBtn">Leather</a>
                             </li>
                             <li class="hoverLi num4">
-                                <a href="" class="hover_a hoverMenu woodBtn">Wood</a>
+                                <a href="../../masterpiece_page/masterpiece.html" class="hover_a hoverMenu woodBtn">Wood</a>
                             </li>
                             <li class="hoverLi num5">
-                                <a href="" class="hover_a hoverMenu accBtn">ACC</a>
+                                <a href="../../masterpiece_page/masterpiece.html" class="hover_a hoverMenu accBtn">ACC</a>
                             </li>
                             <li class="hoverLi num6">
                                 <div class="hover_div rightPicAndScript">
@@ -60,9 +62,8 @@
         </nav>
     </header>
 
-    
-
     <main>
+        <div class="main_header_height"></div>
         <div class="change_psw_main">
             <div class="changepwd_h1">
                 <h1>CREATE NEW PASSWORD</h1>
@@ -73,17 +74,31 @@
             <form action="../signIn.html" name="create_newpswd">
                 <div class="password">
                     <label class="change_userinfo_label" for="user_password">Password</label>
-                    <input type="password" id="user_password" class="change_input" name="password"
-                    placeholder="**********" required>
-                    <button type="button" class="show_psw1"><span><i class="fa-solid fa-eye"></i></span></button>
+                    
+                    <div class="inputDiv">
+                        <input type="password" id="user_password" class="change_input" name="password"
+                        placeholder="**********" required>
+                       <span class="show_psw1">
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </span>
+                    </div>
+                    <p></p>
                 </div>
 
                 <div class="confirm_password ">
                     <label class="change_userinfo_label" for="user_confirm_passwords">password Confirmation</label>
-                    
-                    <input type="password" id="user_confirm_passwords" class="change_input" name="confirm_password"
-                    placeholder="**********" required>
-                    <button type="button" class="show_psw2"><span><i class="fa-solid fa-eye"></i></span></button>
+
+                    <div class="inputDiv">
+                        <input type="password" id="user_confirm_passwords" class="change_input" name="confirm_password"
+                        placeholder="**********" required>
+                        <span class="show_psw2">
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </span>
+                
+                    </div>
+                        <p></p>
                 </div>
 
                 <div class="change_button">
@@ -93,19 +108,20 @@
             </form>
 
         </div>
+          
     </main>
     
     <footer>
         <div class="container">
             <div class="footer_icon">
-                <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-twitter "></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-google "></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-instagram "></i></a></span>
+                <span><a class="first_icon"><i class="fa-brands fa-facebook-f"></i></a></span>
+                <span><a class="second_icon"><i class="fa-brands fa-twitter "></i></a></span>
+                <span><a class="third_icon"><i class="fa-brands fa-google "></i></a></span>
+                <span><a class="fourth_icon"><i class="fa-brands fa-instagram "></i></a></span>
             </div>
 
             <div class="footer_left_name footer_center footer_font_size">ABOUT COMPANY</div>
-            <div class="footer_left_contents footer_center">Dolorx sit aute sint velit et velit. Aliqua proident do duis ullamco Lorem cupidatat do nisi nisi sit quis deserunt reprehenderit elit. Deserunt elit voluptate anim veniam ullamco ullamco id labore veniam.</div>
+            <div class="footer_left_contents footer_center">Dolute sint velit et velit. Aliqua proident do duis ullamco Lorem cupidatat do nisi nisi sit quis deserunt reprehenderit elit. Deserunt elit voluptate anim veniam ullamco ullamco id labore veniam.</div>
             
             <div class="footer_middle_name footer_center footer_font_size">CONTACT</div>
             <div class="footer_middle_contents">
