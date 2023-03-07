@@ -11,7 +11,6 @@ const main_notice = document.querySelector('.main_notice');
 let delY = 0;
 
 window.addEventListener(`wheel`, (e) => {
-    console.log(headerBigNav.offsetHeight);
     delY += e.deltaY;
 
     if(delY > 300) {

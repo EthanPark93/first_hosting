@@ -261,7 +261,6 @@ header h1 {
 
 
 main{
-    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -444,7 +443,7 @@ main a,
         font-size: .8rem;
     }
     main{
-        height: 90vh;
+       
         grid-template-rows: 80px 600px 80px;
     }
     .sign_in{
@@ -467,7 +466,6 @@ main a,
     }
 
     main{
-        height: 90vh;
         grid-template-rows: 80px 1fr 80px;
     }
 

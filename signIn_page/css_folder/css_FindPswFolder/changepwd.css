@@ -261,7 +261,6 @@ header h1 {
 ===================================================== header */
 
 main{
-    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -296,7 +295,7 @@ main form{
 
 .change_psw_main{
     width: 800px;
-    margin-top: 160px;
+    margin: 160px 0 100px;
     
     align-self: start;
     text-align: center;
@@ -382,6 +381,7 @@ span .fa-eye-slash{
 
 
 /*===================================main media=========================================*/
+
 @media screen and (min-width: 550px) and (max-width: 999px) {
     :root {
         font-size: 14.5px;
@@ -390,7 +390,7 @@ span .fa-eye-slash{
         height: 80px;
     }
     main{
-        height: 75vh;
+
         grid-template-rows: 80px 1fr 80px;
     }
 
@@ -413,7 +413,7 @@ span .fa-eye-slash{
     }
 
     main{
-        height: 75vh;
+    
         grid-template-rows: 80px 1fr 80px;
     }
 
